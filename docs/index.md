@@ -32,7 +32,9 @@ Getting started
 
 5. Before deploying and running, first connect and enable your device, choose between iOS ([Emulator](https://docs.microsoft.com/en-us/xamarin/ios/get-started/hello-ios/hello-ios-quickstart), [Device](https://docs.microsoft.com/en-us/xamarin/ios/get-started/installation/device-provisioning/)) or Android ([Emulator](https://docs.microsoft.com/en-us/xamarin/android/get-started/installation/android-emulator/), [Device](https://docs.microsoft.com/xamarin/android/get-started/installation/set-up-device-for-development)).
 
-6. To run, set either your Android or iOS project as the startup project, then use F5.
+6. If targeting Android, make sure you have the Android SDK Platform 28 installed, to check this select: Tools -> Android -> Android SDK Manager... and in the `Android SDK and Tools` window, open the `Android 9.0 - Pie` dropdown menu and make sure that `Android SDK Platform 28` is selected.
+
+7. To run, set either your Android or iOS project as the startup project, then use F5.
 
 By default iOS and Android projects are created. But you can also target WPF with `--WPF`, UWP with `--UWP`, macOS with `--macOS` and/or GTK with `--GTK`. Here some common examples, but feel free to change the targets to the ones you require:
 
@@ -64,7 +66,7 @@ All 6 platforms:
 
     dotnet new fabulous-app -n SqueakyApp --WPF --UWP --macOS --GTK
 
-5. If you are using Visual Studio for Mac and you want to start with File -> New, make sure you target ".NET Standard" to add the references to Fabulous:
+8. If you are using Visual Studio for Mac and you want to start with File -> New, make sure you target ".NET Standard" to add the references to Fabulous:
        
        File -> New Solution
        Multiplatform App -> Blank Forms App (F#)
